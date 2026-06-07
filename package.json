@@ -1,0 +1,20 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Proyecto para aprender SASS",
+  "homepage": "https://github.com/Antonator/festivalMusicaWeb#readme",
+  "bugs": {
+    "url": "https://github.com/Antonator/festivalMusicaWeb/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antonator/festivalMusicaWeb.git"
+  },
+  "license": "ISC",
+  "author": "Antony Ocegueda",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
