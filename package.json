@@ -12,12 +12,14 @@
   },
   "license": "ISC",
   "author": "Antony Ocegueda",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp dev"
   },
-  "dependencies": {
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
     "sass": "^1.100.0"
   }
 }
