@@ -11,7 +11,7 @@ const sass = gulpSass(dartSass)
 export function css (done) {
 
     src('src/scss/app.scss') //los pipes controlan el orden de ejecucion de las funciones
-        .pipe(sass()) //aplica sass
+        .pipe(sass().on('error',sass.logError)) //aplica sass
         .pipe(dest('build/css'))
 
     done() //callback que señala el término de la tarea
@@ -20,6 +20,6 @@ export function css (done) {
 //funcion para observar cambios sobre el archivo scss y recompilar de manera automatizada
 //para posteriormente volver a quedar en escucha de cambios en el fichero
 export function dev() {
-    watch('src/scss/app.scss', css) //ubica el archivo y ejecuta la funcion css sobre ese archivo
+    watch('src/scss/**/*.scss', css) //ubica el archivo y ejecuta la funcion css sobre ese archivo
     
 }
