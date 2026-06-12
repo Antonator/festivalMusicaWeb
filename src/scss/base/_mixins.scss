@@ -23,3 +23,22 @@
         @content;
    } 
 }
+
+@mixin contenedor{
+   width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin grid($col,$sep:5rem){
+      display: grid;
+      grid-template-columns: repeat($col,1fr);
+      gap:$sep;
+}
+
+@mixin resetear-lista{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   
+}
